@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: Poiret One;
+}
+html {
+  scroll-behavior: smooth;
+}
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("images/Cover.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.main {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+/* Navbar */
+.main1 {
+  width: 100%;
+  position: fixed;
+  height: auto;
+  margin: 0 auto;
+}
+.full-nav .nav {
+  width: 100% !important;
+  padding: 10px 0px 10px 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  float: left;
+  clear: both;
+}
+.main1 img {
+  float: left;
+  width: 24vh;
+}
+ul {
+  position: static;
+  float: right;
+  list-style-type: none;
+  margin-top: 25px;
+}
+ul li {
+  display: inline-block;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 20px;
+  border: 1px transparent solid;
+  transition: 0.6s ease;
+}
+ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+}
+.name-head {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  font-family: Architects Daughter;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 60px;
+}
+.btn {
+  /* display: inline !important; */
+  position: absolute;
+  top: 70%;
+  left: 8%;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+#home a {
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 20px;
+  border: 1px transparent solid;
+  transition: 0.6s ease;
+  background-color: rgba(255, 255, 255, 0.212);
+}
+#home a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* About Me Section */
+#about {
+  background-color: #ffa07a;
+}
+#about .heading {
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 40px;
+  margin-bottom: 30px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+#about .flex-container {
+  display: flex;
+  position: flex-end;
+  padding-bottom: 70px;
+  align-items: center;
+}
+#about .flex-items {
+  margin: 0px 60px 0px 60px;
+}
+#about .flex-container img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  float: left;
+}
+#about .flex-container p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 25px;
+  color: #fff;
+}
+
+/* Portfolio Section */
+#portfolio {
+  background-color: rgb(15, 102, 117);
+}
+#portfolio .heading {
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+#portfolio .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#portfolio img {
+  object-fit: cover;
+  max-width: 100%;
+}
+#portfolio .col-md {
+  width: 30%;
+  float: left;
+  padding: 0 10px 20px 10px;
+}
+#portfolio .hover-items {
+  position: relative;
+  overflow: hidden;
+}
+#portfolio .hover-items .txt-h {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  cursor: pointer;
+}
+#portfolio .hover-items:hover .txt-h {
+  opacity: 1;
+  visibility: visible;
+  transition: 0.6s ease;
+}
+#portfolio .hover-items .txt-h h3 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#portfolio .hover-items .txt-h h3::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/* Services section */
+#services {
+  background-color: #f5deb3;
+  color: #fff;
+}
+#services .heading {
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgb(10, 100, 130);
+}
+#services .s-icons {
+  font-size: 50px;
+  color: #fff;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.box {
+  max-width: 26%;
+  border: 1px solid rgb(10, 100, 130);
+  border-radius: 10px;
+  margin: 10px 10px 60px 10px;
+  padding: 30px;
+  background: linear-gradient(to top, rgb(10, 100, 130) 50%, #deb887 50%);
+  background-size: 100% 200%;
+  transition: all 0.8s;
+  text-align: center;
+}
+.box:hover {
+  background-position: left bottom;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 20px rgb(10, 100, 130) !important;
+}
+#services h1 {
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: bolder;
+  padding-top: 20px;
+  margin-bottom: 60px;
+  letter-spacing: 0.5px;
+}
+#services p {
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 25px;
+  /* color: rgb(255, 255, 255); */
+}
+
+/* Contact Me Section */
+#contact {
+  background-color: rgba(0, 0, 0, 0.623);
+}
+#contact .heading {
+  font-size: 35px;
+  line-height: 35px;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: rgb(186, 228, 226);
+}
+#contact .flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+#contact .flex-item,
+#contact .flex-item-2 {
+  width: 50%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  /* box-sizing: border-box; */
+  align-items: center;
+}
+#name,
+#email {
+  padding: 12px;
+  margin: 15px 0 15px 0;
+  width: 60%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+#msg {
+  width: 60%;
+  padding: 12px;
+  margin: 15px 0 15px 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+#send {
+  font-weight: bolder;
+  background-color: rgb(186, 228, 226);
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  width: 20%;
+  cursor: pointer;
+  margin-bottom: 70px;
+}
+#send:hover {
+  background-color: rgb(125, 224, 219);
+}
+#contact .flex-item-2 {
+  color: #fff;
+  text-align: right;
+  font-size: 25px;
+  margin: 10px 0px 10px 0px;
+}
+#contact .flex-item-2 h1,
+#contact .flex-item-2 p {
+  padding-right: 100px;
+  margin: 20px 0 20px 0;
+}
